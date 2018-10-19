@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <h1 id='title'>A TRAVEL AGENCY'S SURVEY FORM</h1>
+    <div id='form-outer'>
+        <p id='description'>Let us know how we can improve our services.</p>
+        <form id='survey-form' action='/#'>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label id='name-label' for='name'>* Name: </label>
+                </div>
+                <div class='rightTab'>
+                    <input autofocus type='text' id='name' placeholder='Name' class='input-field' required>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label id='email-label' for='email'>* Email: </label>
+                </div>
+                <div class='rightTab'>
+                    <input type='email' id='email' placeholder='Email' class='input-field' required>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label id='number-label' for='age'>* Age: </label>
+                </div>
+                <div class='rightTab'>
+                    <input type='number' id='number' name='age' min='1' max='125' class='input-field' placeholder='Age'>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='industry'>Which industry do you belong?</label>
+                </div>
+                <div class='rightTab'>
+                    <select id='dropdown' class='dropdown' name='industry'>
+                        <option disabled selected value>Select an option</option>
+                        <option value='agri'>Agriculture, Forestry, Fishing</option>
+                        <option value='mining'>Mining</option>
+                        <option value='manufacturing'>Manufacturing</option>
+                        <option value='electricity'>Electricity, Gas, Water, Waste Services</option>
+                        <option value='contstruction'>Construction</option>
+                        <option value='wholesale'>Wholesale Trade</option>
+                        <option value='retail'>Retail Trade</option>
+                        <option value='accommodation'>Accommodation and Food Services</option>
+                        <option value='transport'>Transport, Postal and Warehousing</option>
+                        <option value='information'>Information Media and Telecommunications</option>
+                        <option value='finance'>Financial and Insurance Services</option>
+                        <option value='realestate'>Rental, Hiring and Real Estate Services</option>
+                        <option value='science'>Professional, Scientific, Technical Services</option>
+                        <option value='administrative'>Administrative and Support Services</option>
+                        <option value='public'>Public Administration and Safety</option>
+                        <option value='education'>Education and Training</option>
+                        <option value='health'>Health Care and Social Assistance</option>
+                        <option value='arts'>Arts and Recreation Services</option>
+                        <option value='other'>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='userRating'>* Will you reccommend our services to your family or friends?</label>
+                </div>
+                <div class='rightTab'>
+                    <ul style='list-style: none;'>
+                        <li class='radio'><label>Definitely!<input type='radio' name='radio-buttons' value='1' class='userRatings'></label></li>
+                        <li class='radio'><label>Maybe<input type='radio' name='radio-buttons' value='2' class='userRatings'></label></li>
+                        <li class='radio'><label>Nope<input type='radio' name='radio-buttons' value='3' class='userRatings'></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='most-like'>What do you like most about us?</label>
+                </div>
+                <div class='rightTab'>
+                    <select id='most-like' class='dropdown'>
+                        <option disabled selected value>Select an option</option>
+                        <option>Website</option>
+                        <option>Agents</option>
+                        <option>Rates</option>
+                        <option>Response time</option>
+                        <option>Referral Program</option>
+                    </select>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='preferences'>What can we improve on? (select all that applies): </label>
+                </div>
+                <div class='rightTab'>
+                    <ul id='preferences' style='list-style: none;'>
+                        <li class='checkbox'><label><input type='checkbox' class='userRatings' name='prefer' value='1'>Website</label></li>
+                        <li class='checkbox'><label><input type='checkbox' class='userRatings' name='prefer' value='2'>Agents</label></li>
+                        <li class='checkbox'><label><input type='checkbox' class='userRatings' name='prefer' value='3'>Response
+                                Time</label></li>
+                        <li class='checkbox'><label><input type='checkbox' class='userRatings' name='prefer' value='4'>Packages</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='comments'>Comments or Suggestions?</label>
+                </div>
+                <div class='rightTab'>
+                    <textarea id='comments' class='input-field' style='height:100px;resize:vertical;' placeholder='Enter your comments and suggestions here...'></textarea>
+                </div>
+            </div>
+            <button type='submit' id='submit'>Submit</button>
+
+        </form>
+    </div>
+    <footer>Coded for FreeCodeCamp by Cris Acosta</footer>
+</body>
+
+</html>
