@@ -1,1 +1,1 @@
-This is a simple survey created as a Responsive Web Design Projects for Freecodecamp.org. Added media query for different screens sizes.
+This is a simple survey form created as a Responsive Web Design Projects for Freecodecamp.org. I use a travel agency's form as model for this project as I currently am connected with luxury travel agency that caters to business class and first class passengers. Added media query for different screens sizes.
